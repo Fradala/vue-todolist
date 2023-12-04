@@ -18,13 +18,15 @@
                 <input type="text" class="nuovo-elemento" name="userTodo" id="userTodo" v-model="newTodoElement" @keyup.enter="addNewTodoItem(newTodoElement)">
             </div>
             <ul class="lista-spesa">
-                <li class="todo-item" v-for="(element, index) in listaSpesa">
-                    <p>
-                        {{ element.text }} 
-                    </p>
-                    <span @click="removeTodoElement(index)">
-                        &cross;
-                    </span>
+                <li v-for="(element, index) in listaSpesa">
+                    <div class="todo-item"  :class="element.done === true ? 'testo-sbarrato' : '' ">
+                        <p>
+                            {{ element.text }} 
+                        </p>
+                        <span @click="removeTodoElement(index)">
+                            &cross;
+                        </span>
+                    </div>
                 </li>
             </ul>
         </main>

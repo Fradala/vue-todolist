@@ -15,23 +15,23 @@ createApp({
             listaSpesa:[
                 {
                     text: 'pomodori',
-                    done: 'true'
+                    done: true
                 },
                 {
                     text: 'pane',
-                    done: 'false'
+                    done: false
                 },
                 {
                     text: 'carta igenica',
-                    done: 'true'
+                    done: true
                 },
                 {
                     text: 'tovaglioli',
-                    done: 'true'
+                    done: true
                 },
                 {
                     text: 'pasta',
-                    done: 'false'
+                    done: false
                 },
             
             ]
