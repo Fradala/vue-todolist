@@ -15,13 +15,16 @@
         </h1>
         <main class="wrapper">
             <div class="taskbar">
-                <input type="text" class="nuovo-elemento" name="userTodo" id="userTodo">
+                <input type="text" class="nuovo-elemento" name="userTodo" id="userTodo" v-model="newTodoElement" @keyup.enter="addNewTodoItem(newTodoElement)">
             </div>
-            <ul class="lista-spesa">
-                <li class="todo-item" v-for="element in listaSpesa">
+            <ul class="lista-spesa" v-if="element.text === element.done.true">
+                <li class="todo-item" v-for="(element, index) in listaSpesa">
                     <p>
                         {{ element.text }} 
                     </p>
+                    <span @click="removeTodoElement(todoElement)">
+                        &cross;
+                    </span>
                 </li>
             </ul>
         </main>

@@ -6,8 +6,25 @@
 
 h1{
     text-align: center;
+    padding: 1rem;
 }
 
-li{
+.wrapper{
+    margin: auto;
+    text-align: center;
+    width: 60%;
+}
+
+.lista-spesa{
+    margin: 1rem;
+    list-style-type: none;
     
+    
+}
+
+.todo-item{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin-bottom: 10px;
 }

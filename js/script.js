@@ -10,6 +10,8 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            newTodoElement: '',
+
             listaSpesa:[
                 {
                     text: 'pomodori',
@@ -36,6 +38,18 @@ createApp({
             
                 
         }
+    },
+    methods:{
+        addNewTodoItem(newElement){
+            console.log(newElement)
+            this.listaSpesa.push(newElement)
+            console.log(this.listaSpesa)
+        },
+
+        removeTodoElement(indexToBeRemoved){
+            this.listaSpesa.splice(indexToBeRemoved, 1)
+        }
+
     }
 
     
