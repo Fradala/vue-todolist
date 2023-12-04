@@ -46,6 +46,7 @@ createApp({
                 text: newElement,
                 done: false
             })
+            this.newTodoElement = '';
         },
 
         removeTodoElement(indexToBeRemoved){

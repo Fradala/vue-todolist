@@ -15,7 +15,8 @@
         </h1>
         <main class="wrapper">
             <div class="taskbar">
-                <input type="text" class="nuovo-elemento" name="userTodo" id="userTodo" v-model="newTodoElement" @keyup.enter="addNewTodoItem(newTodoElement)">
+                <input type="text" class="nuovo-elemento" name="userTodo" id="userTodo" v-model="newTodoElement" >
+                <button @click="addNewTodoItem(newTodoElement)">aggiungi</button>
             </div>
             <ul class="lista-spesa">
                 <li v-for="(element, index) in listaSpesa">
