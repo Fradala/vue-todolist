@@ -7,6 +7,7 @@
 h1{
     text-align: center;
     padding: 1rem;
+    
 }
 
 .wrapper{
@@ -27,4 +28,8 @@ h1{
     justify-content: space-between;
     border: 1px solid black;
     margin-bottom: 10px;
+}
+
+.testo-sbarrato{
+    text-decoration:line-through ;
 }
