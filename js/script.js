@@ -42,8 +42,10 @@ createApp({
     methods:{
         addNewTodoItem(newElement){
             console.log(newElement)
-            this.listaSpesa.push(newElement)
-            console.log(this.listaSpesa)
+            this.listaSpesa.push({
+                text: newElement,
+                done: false
+            })
         },
 
         removeTodoElement(indexToBeRemoved){
