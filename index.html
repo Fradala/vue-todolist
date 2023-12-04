@@ -10,7 +10,21 @@
 <body>
     <script src="https://unpkg.com/vue@3"></script>
     <div id="app">
-        
+        <h1>
+            Lista della spesa
+        </h1>
+        <main class="wrapper">
+            <div class="taskbar">
+                <input type="text" class="nuovo-elemento" name="userTodo" id="userTodo">
+            </div>
+            <ul class="lista-spesa">
+                <li class="todo-item" v-for="element in listaSpesa">
+                    <p>
+                        {{ element.text }} 
+                    </p>
+                </li>
+            </ul>
+        </main>
     </div>
 
 
